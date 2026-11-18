@@ -3,32 +3,12 @@ const colourList = [{
         style: "color: #FFC0CB; font-weight: bold;"
    },
     {
-        word: "Italian Reformist Socialist Party",
-        style: "color: #FFC0CB; font-weight: bold;"
-   },
-    {
-        word: "Others",
-        style: "color: #808080; font-weight: bold;"
-   },
-    {
         word: "PE",
         style: "color: #90EE90; font-weight: bold;"
    },
     {
         word: "ADN",
         style: "color: #78b3e3; font-weight: bold;"
-   },
-    {
-        word: "Si",
-        style: "color: #74cf74; font-weight: bold;"
-   },
-    {
-        word: "Nó",
-        style: "color: #FF746C; font-weight: bold;"
-   },
-    {
-        word: "Astenersi",
-        style: "color: #c2bdb9; font-weight: bold;"
    },
     {
         word: "SFIO",
@@ -41,18 +21,6 @@ const colourList = [{
     {
         word: "Labour Party",
         style: "color: #f0456a; font-weight: bold;"
-   },
-    {
-        word: "Martin Segitz",
-        style: "color: #c00000; font-weight: bold;"
-   },
-    {
-        word: "Kurt Eisner",
-        style: "color: #D47B9B; font-weight: bold;"
-   },
-    {
-        word: "Anton Graf von Arco auf Valley",
-        style: "color: #7A3C00; font-weight: bold;"
    },
     {
         word: "Vilnius",
@@ -75,14 +43,6 @@ const colourList = [{
         style: "font-weight: bold;"
    },
     {
-        word: "Sejm",
-        style: "font-weight: bold;"
-   },
-    {
-        word: "Battle of Bereza Kartuska",
-        style: "font-weight: bold;"
-   },
-    {
         word: "PA",
         style: "color: #006600; font-weight: bold;"
    },
@@ -97,10 +57,6 @@ const colourList = [{
     {
         word: "LI",
         style: "color: #5d849e; font-weight: bold;"
-   },
-    {
-        word: "Emil Eichhorn",
-        style: "color: #c00000; font-weight: bold;"
    },
     {
         word: "Left-Maximalist",
@@ -119,91 +75,19 @@ const colourList = [{
         style: "color: #D50000; font-weight: bold;"
    },
     {
-        word: "Labour and Socialist International",
-        style: "color: #D50032; font-weight: bold;"
-   },
-    {
-        word: "Berne International",
-        style: "color: #D50032; font-weight: bold;"
-   },
-    {
-        word: "International Working Union of Socialist Parties",
-        style: "color: #D50032; font-weight: bold;"
-   },
-    {
         word: "SPD",
         style: "color: #c00000; font-weight: bold;"
-   },
-    {
-        word: "Friedrich Ebert",
-        style: "color: #c00000; font-weight: bold;"
-   },
-    {
-        word: "Philipp Scheidemann",
-        style: "color: #c00000; font-weight: bold;"
-   },
-    {
-        word: "Matthias Erzberger",
-        style: "color: #000000; font-weight: bold;"
-   },
-    {
-        word: "Arthur Graf von Posadowsky-Wehner",
-        style: "color: #4288B3; font-weight: bold;"
    },
     {
         word: "Red Army",
         style: "color: #940000; font-weight: bold;"
    },
     {
-        word: "Karl Liebknecht",
-        style: "color: #9c2f2f; font-weight: bold;"
-   },
-    {
-        word: "Rosa Luxemburg",
-        style: "color: #D47B9B; font-weight: bold;"
-   },
-    {
-        word: "Freikorps",
-        style: "color: #808080; font-weight: bold;"
-   },
-    {
         word: "Kiev",
         style: "font-weight: bold;"
    },
     {
-        word: "Landwehr River",
-        style: "font-weight: bold;"
-   },
-    {
-        word: "Zhytomyr",
-        style: "font-weight: bold;"
-   },
-    {
-        word: "Reichspräsident",
-        style: "font-weight: bold;"
-   },
-    {
-        word: "Ukrainian People's Army",
-        style: "font-weight: bold;"
-   },
-    {
-        word: "League Of Nations",
-        style: "color: #0C418C; font-weight: bold;"
-   },
-    {
-        word: "Partito Socialista Riformista Italiano",
-        style: "color: #FFC0CB; font-weight: bold;"
-   },
-    {
         word: "PSI",
-        style: "color: #ED2855; font-weight: bold;"
-   },
-    {
-        word: "Italian Socialist Party",
-        style: "color: #ED2855; font-weight: bold;"
-   },
-    {
-        word: "Partito Socialista Italiano",
         style: "color: #ED2855; font-weight: bold;"
    },
     {
@@ -281,14 +165,6 @@ const colourList = [{
     {
         word: "PNF",
         style: "color: #000000; font-weight: bold;"
-   },
-    {
-        word: "Vittorio Emanuele III",
-        style: "color: #6e7f80; font-weight: bold;"
-   },
-    {
-        word: "Umberto II",
-        style: "color: #6e7f80; font-weight: bold;"
    },
     {
         word: "Red Guard",
