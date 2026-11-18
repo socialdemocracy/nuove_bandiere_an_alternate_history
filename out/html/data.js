@@ -168,7 +168,7 @@ const colourList = [{
    },
     {
         word: "Red Guard",
-        style: "color: #693232; font-weight: bold;"
+        style: "color: #c2352b; font-weight: bold;"
    },
     {
         word: "Red Guards - PCd'I",
@@ -176,7 +176,7 @@ const colourList = [{
    },
     {
         word: "Red Guards - PSI",
-        style: "color: #FF6961; font-weight: bold;"
+        style: "color: #c2352b; font-weight: bold;"
    },
     {
         word: "Arditi del Popolo",
@@ -184,15 +184,15 @@ const colourList = [{
    },
     {
         word: "Fasci",
-        style: "color: #000000; font-weight: bold;"
+        style: "color: #3D3D3D; font-weight: bold;"
    },
     {
         word: "Arditismo",
-        style: "color: #b5aeae; font-weight: bold;"
+        style: "color: #3D3D3D; font-weight: bold;"
    },
     {
         word: "Anti-Bolshevik Leagues",
-        style: "color: #240606; font-weight: bold;"
+        style: "color: #3D3D3D; font-weight: bold;"
    },
     {
         word: "Regio Esercito",
