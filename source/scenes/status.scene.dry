@@ -61,11 +61,11 @@ Paramilitary: [+ para_resources +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-<span style="color: #693232;">**Revolutionary Fervour**</span>: [+ revolutionary_fervour +]%
+Revolutionary Fervour: [+ revolutionary_fervour +]%
 
-[? if not_participating = 1: <span style="color: #700000;">**Revolutionary Exhaustion**</span>: [+ revolutionary_exhaustion_2 : exhaustion +] ?]
+[? if not_participating = 1: Revolutionary Exhaustion: [+ revolutionary_exhaustion_2 : exhaustion +] ?]
 
-<span style="color: [+ communist_colour +];">**Radicalisation**</span>: [+ radicalisation : radicalisation +]
+Radicalisation: [+ radicalisation : radicalisation +]
 
 [? if prime_minister = "D'Annunzio" : Our relationship with D'Annunzio is [+ dannunzio_relation : radicalisation +] ?]
 
@@ -73,9 +73,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-[? if not king_abolished : King: <span style="color: [+ i_colour +];">**[+ king +]**</span> ?]
+[? if not king_abolished : King: <span style="color: [+ i_colour +];">[+ king +]</span> ?]
 
-[? if not king_abolished and not king_figurehead : <span style="color: [+ i_colour +];">**King**</span> Approval: [+ king_relation : relationships +] ?]
+[? if not king_abolished and not king_figurehead : <span style="color: [+ i_colour +];">[+ king +]</span>'s Approval: [+ king_relation : relationships +] ?]
 
 Prime Minister: [? if prime_minister_party == "PSI": <span style="color: [+ psi_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "LDR": <span style="color: [+ ldr_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PSRI": <span style="color: [+ psri_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "UL": <span style="color: [+ ul_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PCd'I": <span style="color: [+ pcdi_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PSU": <span style="color: [+ psu_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PLL": <span style="color: [+ pll_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PRI": <span style="color: [+ pri_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "DS": <span style="color: [+ ds_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PDSI": <span style="color: [+ pdsi_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PPI": <span style="color: [+ ppi_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PLDI": <span style="color: [+ pldi_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PLI": <span style="color: [+ pli_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PCS": <span style="color: [+ pcs_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "FdC": <span style="color: [+ pnf_colour +];">[+ prime_minister +]</span>?][? if prime_minister_party == "PNF": <span style="color: [+ pnf_colour +];">[+ prime_minister +]</span>?] ([? if prime_minister_party == "PSI":<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>?][? if prime_minister_party == "LDR":<span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>?][? if prime_minister_party == "PSRI":<span style="color: [+ psri_colour +];">**PSRI**</span>?][? if prime_minister_party == "UL":<span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>?][? if prime_minister_party == "PCd'I":<span style="color: [+ pcdi_colour +];">**PCd'I**</span>?][? if prime_minister_party == "PSU":<span style="color: [+ psu_colour +];">**PSU**</span>?][? if prime_minister_party == "PLL":<span style="color: [+ pll_colour +];">**PLL**</span>?][? if prime_minister_party == "PRI":<span style="color: [+ pri_colour +];">**PRI**</span>?][? if prime_minister_party == "DS":<span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>?][? if prime_minister_party == "PDSI":<span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>?][? if prime_minister_party == "PPI":<span style="color: [+ ppi_colour +];">**PPI**</span>?][? if prime_minister_party == "PLDI":<span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>?][? if prime_minister_party == "PLI":<span style="color: [+ pli_colour +];">**[+ pli_name +]**</span>?][? if prime_minister_party == "PLI":<span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>?][? if prime_minister_party == "PCS":<span style="color: [+ pcs_colour +];">**PCS**</span>?][? if prime_minister_party == "FdC":<span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>?][? if prime_minister_party == "PNF":<span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>?])
 
@@ -149,6 +149,12 @@ Chamber of Deputies composition:
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
+= Debts
+
+<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
+
+<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
+
 = Coalition Demands
 
 [? if left_wing_coalition : We are in a coalition without demands. ?]
@@ -190,10 +196,6 @@ Inflation: [+ inflation_2 +]%
 Economic Growth: [+ economic_growth_2 +]%
 
 Unemployment: [+ unemployment_2 +]%
-
-<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
-
-<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
 
 @politics
 
