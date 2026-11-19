@@ -7,7 +7,7 @@ face-image: img/giuffrida.jpeg
 
 = <span style="color: [+ ds_colour +];">Democrazia Sociale</span> Fractures!
  
-<span style="color: [+ ds_colour +];">Democrazia Sociale</span> has always been an interesting party, holding many diverse views, from monarchism to some form of social democracy  the party's ideology has usually been a mess. Given its current rise in the polls and its overtaking of the [+ ldr_name +] and [+ ul_name +], many would naturally expect the party to have some sort of comfort in that it will *probably* not be doomed to irrelevance.
+<span style="color: [+ ds_colour +];">Democrazia Sociale</span> has always been an interesting party, holding many diverse views, from <span style="color: [+ i_colour +];">monarchism</span> to some form of <span style="color: [+ psri_colour +];">social democracy</span>  the party's ideology has usually been a mess. Given its current rise in the polls and its overtaking of the [+ ldr_name +] and [+ ul_name +], many would naturally expect the party to have some sort of comfort in that it will *probably* not be doomed to irrelevance.
 
 However, the opposite has been proven, as cracks, usually held closed by the party leadership, have begun to be exposed wide open, as open ideological disputes have started taking place between the left and right of the party. It seems the center is powerless to stop this, and the party seems headed towards self destruction. It is only a matter of time before the party spilts.
 
@@ -128,7 +128,7 @@ for (var record of Q.party_support_records) {
 
 !}
 
-The first wing of the party to spilt, the left wing, under Giuffrida, has chosen to form its own party, the PLL. It is closely aligned to us and supports a mixture of liberal politics and socialism. It is expected that the right-wing of the [+ ds_name +] will follow un the left-wing footsteps and form a  new, different party. Either way, the [+ ds_name +] has been left extremely fractured by this alone.
+The first wing of the party to spilt, the left wing, under Giuffrida, has chosen to form its own party, the PLL. It is closely aligned to us and supports a mixture of <span style="color: [+ ldr_colour +];">liberal</span> politics and <span style="color: [+ psi_colour +];">socialism</span>. It is expected that the right-wing of the [+ ds_name +] will follow un the left-wing footsteps and form a  new, different party. Either way, the [+ ds_name +] has been left extremely fractured by this alone.
 
 - @ds_fracture_right: The right spilts from the party, forming the PCS.
 
