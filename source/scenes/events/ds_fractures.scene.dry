@@ -14,6 +14,7 @@ However, the opposite has been proven, as cracks, usually held closed by the par
 - @ds_collapse_left: The left spilts from the party, forming the PLL.
 
 @ds_collapse_left
+face-image: img/pll_logo_2.png
 on-arrival: {!
 
 Q.ds_fractured = 1;
@@ -126,7 +127,6 @@ for (var record of Q.party_support_records) {
 }
 
 !}
-face-image: img/pll_logo_2.png
 
 The first wing of the party to spilt, the left wing, under Giuffrida, has chosen to form its own party, the PLL. It is closely aligned to us and supports a mixture of liberal politics and socialism. It is expected that the right-wing of the [+ ds_name +] will follow un the left-wing footsteps and form a  new, different party. Either way, the [+ ds_name +] has been left extremely fractured by this alone.
 
