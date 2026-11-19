@@ -261,7 +261,7 @@ PPI: [? if ppi_leader = "Sturzo": <span style="color: #94c5d1;">Popolarism</span
 
 <span style="color: [+ maximalist_colour +];">**Maximalist**</span> strength: [+ maximalist_strength : strength +], dissent: [+ maximalist_dissent : dissent +]
 
-<span style="color: [+ labour_colour +];">**Labour**</span> strength: [+ labour_strength : strength +], dissent: [+ labour_dissent : dissent +]
+<span style="color: [+ labour_colour +];">**Labor**</span> strength: [+ labour_strength : strength +], dissent: [+ labour_dissent : dissent +]
 
 <span style="color: [+ syndicalist_colour +];">**Syndicalist**</span> strength: [+ syndicalist_strength : strength +], dissent: [+ syndicalist_dissent : dissent +] 
 
