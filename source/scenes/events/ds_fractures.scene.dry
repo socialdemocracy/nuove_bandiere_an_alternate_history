@@ -1,16 +1,17 @@
-title: [+ ds_name +] Fractures!
-subtitle: The party's internal machinations have caused its collapse.
+title: <span style="color: [+ ds_colour +];">Democrazia Sociale</span> falls apart..
+subtitle: A party with so many contradictions, it can no longer stand on its own.
 new-page: true
 view-if: ds_r > ul_r and ds_r > ldr_r and ds_party and not ds_fractured and not pcs_formed and not pll_formed
 tags: event
+face-image: img/giuffrida.jpeg
 
-= [+ ds_name +] Fractures!
+= <span style="color: [+ ds_colour +];">Democrazia Sociale</span> Fractures!
+ 
+<span style="color: [+ ds_colour +];">Democrazia Sociale</span> has always been an interesting party, holding many diverse views, from monarchism to some form of social democracy  the party's ideology has usually been a mess. Given its current rise in the polls and its overtaking of the [+ ldr_name +=] and [+ ul_name +], many would naturally expect the party to have some sort of comfort in that it will *probably* not be doomed to irrelevance.
 
-The [+ ds_name +] has always been a historically unstable party, having had members from left to right wings of the political sphere. However, these ideological differences have typically been placed in check by the party's leadership, notably Giovanni Antonio Colonna di Cesarò. However, the rise of the [+ ds_full_name +] as the dominant party in the liberal sphere has resulted in an worsening of these party internal politics, as arguments and fights between members break out regularly.
+However, the opposite has been proven, as cracks, usually held closed by the party leadership, have begun to be exposed wide open, as open ideological disputes have started taking place between the left and right of the party. It seems the center is powerless to stop this, and the party seems headed towards self destruction. It is only a matter of time before the party spilts.
 
-The party can no longer hold through compromise.
-
-- @ds_collapse: The left, led by Giuffrida, and the right, led by Carnazza, split from the party.
+- @ds_collapse_left: The left spilts from the party, forming the PLL.
 
 @ds_collapse
 on-arrival: {!
@@ -125,5 +126,15 @@ for (var record of Q.party_support_records) {
 }
 
 !}
+face-image: img/pll_logo_2.png
 
-Both the 'Christian Social Party', led by Gabriello Carnazza and the 'Liberal Workers' Party', led by Vincenzo Giuffrida have been founded, as the remnants of the [+ ds_name +] have been left as the party becomes defunct, a shadow of its former self.
+The first wing of the party to spilt, the left wing, under Giuffrida, has chosen to form its own party, the PLL. It is closely aligned to us and supports a mixture of liberal politics and socialism. It is expected that the right-wing of the [+ ds_name +] will follow un the left-wing footsteps and form a  new, different party. Either way, the [+ ds_name +] has been left extremely fractured by this alone.
+
+- @ds_fracture_right: The right spilts from the party, forming the PCS.
+
+@ds_fracture_right
+face-image: img/pcs_logo.webp
+
+The right-wing, as expected, has also spilt from the party, furthering the [+ ds_name +]'s destruction. The party has been left an empty husk of what it once was, and it is safe to say that the [+ ul_name +] and [+ ldr_name +] are sure to enjoy the benefits of now having homeless voters on the market due to the mess around the PLL, PCS, and [+ ds_name +].
+
+root: They brought this on themselves..
