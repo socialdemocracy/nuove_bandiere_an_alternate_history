@@ -6,9 +6,9 @@ max-visits: 1
 new-page: true
 face-image: img/portraits/mussolini_power2.jpeg
 on-arrival: {!
-ul_in_government = 1; 
-ds_in_government = 1; 
-pnf_in_government = 1;
+Q.ul_in_government = 1; 
+Q.ds_in_government = 1; 
+Q.pnf_in_government = 1;
 if (Q.ppi_relation < 78) Q.ppi_in_government = 1;
 if (Q.ppi_relation >= 78) Q.ppi_in_government = 0;
 if (Q.cc_formed == 1) Q.ppi_in_government = 0;
