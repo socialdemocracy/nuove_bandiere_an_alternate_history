@@ -1,5 +1,6 @@
 title: A crackdown on <span style="color: [+ syndicalist_colour +];">syndicalists</span>!
 subtitle: Is Giolitti doing us favours now?
+new-page: true
 view-if: year == 1920 and month = 10 and prime_minister == "Giolitti" and syndicalist_active and ul_relation < 30
 frequency: 1000
 max-visits: 1
