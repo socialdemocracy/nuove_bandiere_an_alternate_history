@@ -1,12 +1,14 @@
-title: Syndicalists Arrested!
+title: A crackdown on <span style="color: [+ syndicalist_colour +];">syndicalists</span>!
+subtitle: Is Giolitti doing us favours now?
 view-if: year == 1920 and month = 10 and prime_minister == "Giolitti" and syndicalist_active and ul_relation < 30
 frequency: 1000
 max-visits: 1
-on-arrival: workers_psi -= 7*(1-dissent); rg_strength -= syndicalist_strength*0.8; syndicalist_strength *= 0.2; syndicalist_dissent *= 0.2;
+on-arrival: workers_psi -= 2*(1-dissent); rg_strength -= syndicalist_strength*0.8; syndicalist_strength *= 0.2; syndicalist_dissent *= 0.2; ul_relation += 2
 tags: event
+face-image: img/USI.jpeg
 
-= USI Leadership arrested!
+= <span style="color: [+ syndicalist_colour +];">Syndicalist</span> and <span style="color: [+ syndicalist_colour +];">**USI**</span> leadership arrested!
 
-Shockingly, it seems that Prime Minister Giolitti has ordered the Interior Ministry to arrest the leadership of the Italian Syndicalist Union, successfully imprisoning many under charges of disrupting the public order. This has weakened the syndicalist faction significantly.
+Surprisingly, Prime Minister Giolitti has ordered the Interior Ministry under [+ interior_minister +] to carry out a crackdown agaisnt <span style="color: [+ syndicalist_colour +];">syndicalist</span> organizations across the country, arresting several of their leaders and greatly weakening their ability to organize agaisnt the Giolitti Cabinet. Many of them have successfully been imprisoned under charges of "disrupting public order". In any case, this weakens the <span style="color: [+ syndicalist_colour +];">syndicalists</span> and the <span style="color: [+ syndicalist_colour +];">Italian Syndicalist Union</span> to an extent.
 
-- @root: Concerning.
+- @root: Perhaps hes not doing us a favour..
