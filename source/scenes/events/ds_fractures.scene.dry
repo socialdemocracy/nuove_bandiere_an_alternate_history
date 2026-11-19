@@ -13,7 +13,7 @@ However, the opposite has been proven, as cracks, usually held closed by the par
 
 - @ds_collapse_left: The left spilts from the party, forming the PLL.
 
-@ds_collapse
+@ds_collapse_left
 on-arrival: {!
 
 Q.ds_fractured = 1;
