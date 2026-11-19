@@ -5,7 +5,7 @@ frequency: 1000
 max-visits: 1
 on-arrival: ppi_leader = "De Gasperi" if ppi_leader == "Sturzo";
 tags: event
-face-img: img/luigi_is_good.jpeg
+face-image: img/luigi_is_good.jpeg
 
 Luigi Sturzo, head of the PPI, and notable collaborator with us, has had a meeting with Pope Pius XI. It is likely that the Vatican has secured a deal with the <span style="color: [+ pnf_colour +];">fascists</span> and [+ prime_minister +], in exchange for solving the Roman Question.
 
