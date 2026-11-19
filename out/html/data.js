@@ -99,7 +99,7 @@ const colourList = [{
         style: "color: #DC143C; font-weight: bold;"
    },
     {
-        word: "Labour",
+        word: "Labor",
         style: "color: #B22222; font-weight: bold;"
    },
     {
