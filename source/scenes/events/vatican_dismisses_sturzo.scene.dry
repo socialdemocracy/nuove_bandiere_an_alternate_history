@@ -1,10 +1,16 @@
-title: Sturzo Dismissed!
-view-if: year == 1923 and month = 7 and week = 1 and (roman_question_answered = 0 or pope = "Del Val") and ppi_leader == "Sturzo" and pnf_in_government and church_relation < 79
+title: Sturzo's gone!
+subtitle: The Vatican has dismissed our "friend" over at  the PPI.
+view-if: year == 1923 and month = 7 and week = 1 and (roman_question_answered = 0 or pope = "Del Val") and ppi_leader == "Sturzo" and pnf_in_government and papal_relation < 79
 frequency: 1000
 max-visits: 1
 on-arrival: ppi_leader = "De Gasperi" if ppi_leader == "Sturzo";
 tags: event
+face-img: img/luigi_is_good.jpeg
 
-Luigi Sturzo, head of the PPI, has suddenly and shockingly resigned as party leader after a meeting with Pope Pius XI, though our sources indicate that [+ prime_minister +] had negotiated an agreement with the Holy See to do so. Alcide De Gasparri takes his place as party leader.
+Luigi Sturzo, head of the PPI, and notable collaborator with us, has had a meeting with Pope Pius XI. It is likely that the Vatican has secured a deal with the <span style="color: [+ pnf_colour +];">fascists</span> and [+ prime_minister +], in exchange for solving the Roman Question.
 
-- @root: Concerning.
+Beforehand, he had been pressured by his party to resign, with several figures siding agaisnt him, notably Meda, on the electoral reform, with Sturzo being a fierce opponent of <span style="color: [+ pnf_colour +];">fascist</span> dictatorship. The party's right has given Sturzo an ultimatum.
+
+<div data-rich-color-role="text-primary" style="margin: 16px 0px; padding-left: 12px; border-left: 3px solid rgb(139, 115, 85);">“The Vatican will not always be able to remain impassive before the open struggle going on between the <span style="color: [+ pnf_colour +];">Fascisti</span> and the partisans of Don Sturzo. Until the present moment the latter has been protected by Cardinal Gasparri (the Papal Secretary of State) but the time has come when it is no longer possible for the Secretary of State to be identified with him. If Don Sturzo does not retire a schism in the <span style="color: [+ ppi_colour +];">Popular Party</span> is certain.”</div>
+
+- @root: Sturzo resigns, and Italy continues its slippery-slope into dictatorship.
