@@ -885,7 +885,7 @@ go-to: coalition_menu
 
 [? if psu_formed and psri_joint_psu and not anti_fas_psu : {!<tr><td>!} -PSRI {!</td></tr>!} ?]
 
-[? if pll_formed and not anti_fas_pll : {!<tr><td><div class="box" style='background-color:var(--pll)'> </div>!} <span style="color: [+ ds_colour +];">Liberal</span>-<span style="color: [+ psri_colour +];">Socialist</span> List: {!</td><td>!} [+ pll_r_disp +]% {!</td><td>!} [+ str_change_pll +]% {!</td><td>!} [+ pll_seating +] {!</td><td>!} [+ pll_seating_disp +]% {!</td></tr>!} ?]
+[? if pll_formed and not anti_fas_pll : {!<tr><td><div class="box" style='background-color:var(--pll)'> </div>!} <span style="color: var(--pll);">Liberal</span>-<span style="color: [+ psri_colour +];">Socialist</span> List: {!</td><td>!} [+ pll_r_disp +]% {!</td><td>!} [+ str_change_pll +]% {!</td><td>!} [+ pll_seating +] {!</td><td>!} [+ pll_seating_disp +]% {!</td></tr>!} ?]
 
 [? if pll_formed and not anti_fas_pll : {!<tr><td>!} -PLL {!</td></tr>!} ?]
 
