@@ -978,3 +978,46 @@ body.dark-mode .wide_tooltip-tip::before {
   bottom: auto;
   top: calc(100% + 10px);
 }
+
+:root {
+  --psri: #FFC0CB;
+  --pe: #90EE90;
+  --adn: #78b3e3;
+  --sfio: #ff0000;
+  --mkp: #871923;
+  --labour-party: #f0456a;
+  --pa: #006600;
+  --ani: #00008B;
+  --cc: #203959;
+  --li: #5d849e;
+  --left-maximalist: #99112d;
+  --moderate-maximalist: #bf2645;
+  --right-maximalist: #d47789;
+  --comintern: #D50000;
+  --spd: #c00000;
+  --red-army: #940000;
+
+  --psi: #ED2855;
+  --communist: #8B0000;
+  --maximalist: #DC143C;
+  --labor: #B22222;
+  --reformist: #FF6961;
+  --syndicalist: #2F2F2F;
+
+  --pcdi: #C72F35;
+  --psu: #E35A5A;
+  --pll: #d1c44b;
+  --pri: #3CB371;
+  --ds: #1E99C5;
+  --ppi: #92dff3;
+  --ldr: #FFD700;
+  --pli: #0047AB;
+  --pcs: #656573;
+  --pnf: #000000;
+
+  --red-guard: #c2352b;
+  --red-guards-pcdi: #8B0000;
+  --arditi-del-popolo: #dddddd;
+  --fasci: #3D3D3D;
+  --regio-esercito: #808080;
+}
