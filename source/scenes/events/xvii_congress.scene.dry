@@ -3,6 +3,10 @@ subtitle: A divergence in paths is to be decided once more.
 new-page: true
 tags: event
 view-if: year = 1921 and month = 1
+on-arrival: {!
+Q.psi_colour = '#993d52'
+document.documentElement.style.setProperty('--psi', '#993d52')
+!}
 max-visits: 1
 face-image: img/XVIICongress.jpg
 
