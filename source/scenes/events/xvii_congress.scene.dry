@@ -19,7 +19,7 @@ The Maximalists are caught in the centre, as the Communists and Reformists argue
 subtitle: It is likely the [? if pcdi_formed :remaining?] Communists will split from the party.
 choose-if: maximalist_participating = 1 or participating = 1 or pcdi_formed
 unavailable-subtitle: [? if participating = 0 and maximalist_participating = 0: The XVI Congress has already forced us to adopt a revolutionary stance. ?]
-on-arrival: communist_strength -= 100; communist_dissent += 100; pcdi_formed = 1; revolutionary_fervour -= 10; soviet_relations -= 3;
+on-arrival: communist_strength -= 100; communist_dissent += 100; pcdi_formed = 1; revolutionary_fervour -= 10; soviet_relations -= 3; psi_colour = "#ed4f28" {! colourList[22].style = "color: #ed4f28; font-weight: bold;" !}
 
 [? if communist_split = 1 : Even as the communist faction remains minimal after the founding of the Italian Communist Party, ?] The communist faction has resigned, with the majority [? if communist_split = 1 : joining the existing PCI. ?][? if communist_split = 0 : creating a new party called the Italian Communist Party. ?] 
 
@@ -29,7 +29,7 @@ The Communist International has also expelled us, supporting the new PCI instead
 subtitle: It is likely the [? if psu_formed :remaining?] Reformists will split from the party.
 choose-if: participating = 0 or psu_formed
 unavailable-subtitle: [? if participating = 1 : The XVI Congress has already forced us to adopt a parliamentary stance. ?]
-on-arrival: reformist_strength -= 100; reformist_dissent += 100; reformists_expelled = 1; revolutionary_fervour += 10; psu_formed = 1; changed_name = 1; psi_name = "PC - SIIC"; psi_full_name = "Communist Party - Italian Section of the Communist International"; psi_full_italian = "Partito Comunista - Sezione Italiana dell'Internazionale Comunista"; {!
+on-arrival: reformist_strength -= 100; reformist_dissent += 100; reformists_expelled = 1; revolutionary_fervour += 10; psi_colour = "#750e26"; psu_formed = 1; changed_name = 1; psi_name = "PC - SIIC"; psi_full_name = "Communist Party - Italian Section of the Communist International"; psi_full_italian = "Partito Comunista - Sezione Italiana dell'Internazionale Comunista"; {!
 if (Q.prime_minister_party == "PSI") {
     Q.prime_minister_party = Q.psi_name;
 }
@@ -70,5 +70,6 @@ if (Q.public_education_minister_party == "PSI") {
     Q.public_education_minister_party = Q.psi_name;
 }
 !}
+{! colourList[22].style = "color: #750e26; font-weight: bold;" !}
 
 [? if reformists_defect = 1 : Even as the reformist faction remains minimal after its defection to the PSU, ?] The reformist faction has been expelled, with the majority joining the PSRI.
