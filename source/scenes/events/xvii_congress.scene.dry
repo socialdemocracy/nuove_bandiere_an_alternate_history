@@ -62,6 +62,9 @@ if (Q.finance_minister_party == "PSI") {
     Q.finance_minister_party = Q.psi_name;
 }
 
+colourList[22].style = "color: #750e26; font-weight: bold;"
+}
+
 if (Q.agriculture_minister_party == "PSI") {
     Q.agriculture_minister_party = Q.psi_name;
 }
@@ -70,6 +73,5 @@ if (Q.public_education_minister_party == "PSI") {
     Q.public_education_minister_party = Q.psi_name;
 }
 !}
-{! colourList[22].style = "color: #750e26; font-weight: bold;" !}
 
 [? if reformists_defect = 1 : Even as the reformist faction remains minimal after its defection to the PSU, ?] The reformist faction has been expelled, with the majority joining the PSRI.
