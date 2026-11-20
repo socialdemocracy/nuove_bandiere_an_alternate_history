@@ -853,7 +853,7 @@ go-to: coalition_menu
 
 {!<table>!}
 {!<tr><td>Parties/Groups</td><td>Vote Share</td><td>% Change</td><td>Seats Given</td><td>% Seats</td></tr>!}
-[? if acerbo_law_passed : {!<tr><td><div class="box" style='background-color:#ED2855; outline: 2px; outline-style: solid;'> </div>!} Anti-Fascist List: {!</td><td>!} **[+ psi_r_disp +]%** {!</td><td>!} **[+ str_change_psi +]%** {!</td><td>!} **[+ psi_seating +]** {!</td><td>!} **[+ psi_seating_disp +]%** {!</td></tr>!} ?]
+[? if acerbo_law_passed : {!<tr><td><div class="box" style='background-color:var(--psi); outline: 2px; outline-style: solid;'> </div>!} Anti-Fascist List: {!</td><td>!} **[+ psi_r_disp +]%** {!</td><td>!} **[+ str_change_psi +]%** {!</td><td>!} **[+ psi_seating +]** {!</td><td>!} **[+ psi_seating_disp +]%** {!</td></tr>!} ?]
 
 [? if acerbo_law_passed : {!<tr><td>!} **-[+ psi_name +]** {!</td></tr>!} ?]
 
@@ -871,51 +871,51 @@ go-to: coalition_menu
 
 [? if anti_fas_ldr and acerbo_law_passed : {!<tr><td>!} -[+ ldr_name +]  {!</td></tr>!} ?]
 
-[? if not acerbo_law_passed : {!<tr><td><div class="box" style='background-color:#ED2855; outline: 2px; outline-style: solid;'> </div>!} <span style="color: [+ psi_colour +];">Socialist</span> List: {!</td><td>!} **[+ psi_r_disp +]%** {!</td><td>!} **[+ str_change_psi +]%** {!</td><td>!} **[+ psi_seating +]** {!</td><td>!} **[+ psi_seating_disp +]%** {!</td></tr>!} ?]
+[? if not acerbo_law_passed : {!<tr><td><div class="box" style='background-color:var(--psi); outline: 2px; outline-style: solid;'> </div>!} <span style="color: [+ psi_colour +];">Socialist</span> List: {!</td><td>!} **[+ psi_r_disp +]%** {!</td><td>!} **[+ str_change_psi +]%** {!</td><td>!} **[+ psi_seating +]** {!</td><td>!} **[+ psi_seating_disp +]%** {!</td></tr>!} ?]
 
 [? if not acerbo_law_passed : {!<tr><td>!} **-[+ psi_name +]** {!</td></tr>!} ?]
 
-[? if pcdi_formed : {!<tr><td><div class="box" style='background-color:#C72F35'> </div>!} <span style="color: [+ pcdi_colour +];">Left</span> List: {!</td><td>!} [+ pcdi_r_disp +]% {!</td><td>!} [+ str_change_pcdi +]% {!</td><td>!} [+ pcdi_seating +] {!</td><td>!} [+ pcdi_seating_disp +]% {!</td></tr>!} ?]
+[? if pcdi_formed : {!<tr><td><div class="box" style='background-color:var(--pcdi)'> </div>!} <span style="color: [+ pcdi_colour +];">Left</span> List: {!</td><td>!} [+ pcdi_r_disp +]% {!</td><td>!} [+ str_change_pcdi +]% {!</td><td>!} [+ pcdi_seating +] {!</td><td>!} [+ pcdi_seating_disp +]% {!</td></tr>!} ?]
 
 [? if pcdi_formed : {!<tr><td>!} -PCd'I {!</td></tr>!} ?]
 
-[? if psu_formed and not anti_fas_psu : {!<tr><td><div class="box" style='background-color:#E35A5A'> </div>!} <span style="color: [+ psu_colour +];">Socialist Unity</span> List: {!</td><td>!} [+ psu_r_disp +]% {!</td><td>!} [+ str_change_psu +]% {!</td><td>!} [+ psu_seating +] {!</td><td>!} [+ psu_seating_disp +]% {!</td></tr>!} ?]
+[? if psu_formed and not anti_fas_psu : {!<tr><td><div class="box" style='background-color:var(--psu)'> </div>!} <span style="color: [+ psu_colour +];">Socialist Unity</span> List: {!</td><td>!} [+ psu_r_disp +]% {!</td><td>!} [+ str_change_psu +]% {!</td><td>!} [+ psu_seating +] {!</td><td>!} [+ psu_seating_disp +]% {!</td></tr>!} ?]
 
 [? if psu_formed and not anti_fas_psu : {!<tr><td>!} -PSU {!</td></tr>!} ?]
 
 [? if psu_formed and psri_joint_psu and not anti_fas_psu : {!<tr><td>!} -PSRI {!</td></tr>!} ?]
 
-[? if pll_formed and not anti_fas_pll : {!<tr><td><div class="box" style='background-color:#FFD1D9'> </div>!} <span style="color: [+ ds_colour +];">Liberal</span>-<span style="color: [+ psri_colour +];">Socialist</span> List: {!</td><td>!} [+ pll_r_disp +]% {!</td><td>!} [+ str_change_pll +]% {!</td><td>!} [+ pll_seating +] {!</td><td>!} [+ pll_seating_disp +]% {!</td></tr>!} ?]
+[? if pll_formed and not anti_fas_pll : {!<tr><td><div class="box" style='background-color:var(--pll)'> </div>!} <span style="color: [+ ds_colour +];">Liberal</span>-<span style="color: [+ psri_colour +];">Socialist</span> List: {!</td><td>!} [+ pll_r_disp +]% {!</td><td>!} [+ str_change_pll +]% {!</td><td>!} [+ pll_seating +] {!</td><td>!} [+ pll_seating_disp +]% {!</td></tr>!} ?]
 
 [? if pll_formed and not anti_fas_pll : {!<tr><td>!} -PLL {!</td></tr>!} ?]
 
-[? if (psri_stable or (psri_solo and psri_r >= 5)) and not anti_fas_psri : {!<tr><td><div class="box" style='background-color:#FFC0CB'> </div>!} <span style="color: [+ psri_colour +];">Moderate Socialist</span> List: {!</td><td>!} [+ psri_r_disp +]% {!</td><td>!} [+ str_change_psri +]% {!</td><td>!} [+ psri_seating +] {!</td><td>!} [+ psri_seating_disp +]% {!</td></tr>!} ?]
+[? if (psri_stable or (psri_solo and psri_r >= 5)) and not anti_fas_psri : {!<tr><td><div class="box" style='background-color:var(--psri)'> </div>!} <span style="color: [+ psri_colour +];">Moderate Socialist</span> List: {!</td><td>!} [+ psri_r_disp +]% {!</td><td>!} [+ str_change_psri +]% {!</td><td>!} [+ psri_seating +] {!</td><td>!} [+ psri_seating_disp +]% {!</td></tr>!} ?]
 
 [? if (psri_stable or (psri_solo and psri_r >= 5)) and not anti_fas_psri : {!<tr><td>!} -PSRI {!</td></tr>!} ?]
 
-[? if pri_prominent and not anti_fas_pri : {!<tr><td><div class="box" style='background-color:#3CB371'> </div>!} <span style="color: [+ pri_colour +];">Republican</span> List: {!</td><td>!} [+ pri_r_disp +]% {!</td><td>!} [+ str_change_pri +]% {!</td><td>!} [+ pri_seating +] {!</td><td>!} [+ pri_seating_disp +]% {!</td></tr>!} ?]
+[? if pri_prominent and not anti_fas_pri : {!<tr><td><div class="box" style='background-color:var(--pri)'> </div>!} <span style="color: [+ pri_colour +];">Republican</span> List: {!</td><td>!} [+ pri_r_disp +]% {!</td><td>!} [+ str_change_pri +]% {!</td><td>!} [+ pri_seating +] {!</td><td>!} [+ pri_seating_disp +]% {!</td></tr>!} ?]
 
 [? if pri_prominent and not anti_fas_pri : {!<tr><td>!} -PRI {!</td></tr>!} ?]
 
 [? if pri_prominent and psri_joint_pri and not anti_fas_pri : {!<tr><td>!} -PSRI {!</td></tr>!} ?]
 
-[? if (ds_list and not view_full) or ((ds_party and ds_leader = "Colonna") or (ds_leader = "Carnazza" and ds_party and (pnf_r < 5)) or (ds_party and ds_leader = "Giuffrida" and not ds_joint)) and not anti_fas_ds or pnf_in_government : {!<tr><td><div class="box" style='background-color:#1E99C5'> </div>!} <span style="color: [+ ds_colour +];">Democratic</span> List: {!</td><td>!} [+ ds_r_disp +]% {!</td><td>!} [+ str_change_ds +]% {!</td><td>!} [+ ds_seating +] {!</td><td>!} [+ ds_seating_disp +]% {!</td></tr>!} ?]
+[? if (ds_list and not view_full) or ((ds_party and ds_leader = "Colonna") or (ds_leader = "Carnazza" and ds_party and (pnf_r < 5)) or (ds_party and ds_leader = "Giuffrida" and not ds_joint)) and not anti_fas_ds or pnf_in_government : {!<tr><td><div class="box" style='background-color:var(--ds)'> </div>!} <span style="color: [+ ds_colour +];">Democratic</span> List: {!</td><td>!} [+ ds_r_disp +]% {!</td><td>!} [+ str_change_ds +]% {!</td><td>!} [+ ds_seating +] {!</td><td>!} [+ ds_seating_disp +]% {!</td></tr>!} ?]
 
 [? if (ds_list and not view_full) or ((ds_party and ds_leader = "Colonna") or (ds_leader = "Carnazza" and ds_party and (pnf_r < 5)) or (ds_party and ds_leader = "Giuffrida" and not ds_joint)) and not anti_fas_ds or pnf_in_government : {!<tr><td>!} -[+ ds_name +] {!</td></tr>!} ?]
 
-[? if not pnf_in_power and (not anti_fas_ppi or not acerbo_law_passed) : {!<tr><td><div class="box" style='background-color:#87CEFA'> </div>!} <span style="color: [+ ppi_colour +];">Catholic</span> List: {!</td><td>!} [+ ppi_r_disp +]% {!</td><td>!} [+ str_change_ppi +]% {!</td><td>!} [+ ppi_seating +] {!</td><td>!} [+ ppi_seating_disp +]% {!</td></tr>!} ?]
+[? if not pnf_in_power and (not anti_fas_ppi or not acerbo_law_passed) : {!<tr><td><div class="box" style='background-color:var(--ppi)'> </div>!} <span style="color: [+ ppi_colour +];">Catholic</span> List: {!</td><td>!} [+ ppi_r_disp +]% {!</td><td>!} [+ str_change_ppi +]% {!</td><td>!} [+ ppi_seating +] {!</td><td>!} [+ ppi_seating_disp +]% {!</td></tr>!} ?]
 
 [? if not pnf_in_power and (not anti_fas_ppi or not acerbo_law_passed) : {!<tr><td>!} -PPI {!</td></tr>!} ?]
 
-[? if (ldr_party or ldr_list) and not pnf_in_power and not anti_fas_ldr : {!<tr><td><div class="box" style='background-color:#FFD700'> </div>!} <span style="color: [+ ldr_colour +];">Liberal, Democrats, and Radicals</span>: {!</td><td>!} [+ ldr_r +]% {!</td><td>!} [+ str_change_ldr +]% {!</td><td>!} [+ ldr_seating +] {!</td><td>!} [+ ldr_seating_disp +]% {!</td></tr>!} ?]
+[? if (ldr_party or ldr_list) and not pnf_in_power and not anti_fas_ldr : {!<tr><td><div class="box" style='background-color:var(--ldr)'> </div>!} <span style="color: [+ ldr_colour +];">Liberal, Democrats, and Radicals</span>: {!</td><td>!} [+ ldr_r +]% {!</td><td>!} [+ str_change_ldr +]% {!</td><td>!} [+ ldr_seating +] {!</td><td>!} [+ ldr_seating_disp +]% {!</td></tr>!} ?]
 
 [? if ldr_party or (ldr_list and not view_full) and not pnf_in_power and not anti_fas_ldr : {!<tr><td>!} -PLDI {!</td></tr>!} ?]
 
-[? if not ul_in_bn and not pnf_in_power and not anti_fas_ul : {!<tr><td><div class="box" style='background-color:#0047AB'> </div>!} <span style="color: [+ ul_colour +];">Liberal</span> List: {!</td><td>!} [+ ul_r +]% {!</td><td>!} [+ str_change_ul +]% {!</td><td>!} [+ ul_seating +] {!</td><td>!} [+ ul_seating_disp +]% {!</td></tr>!} ?]
+[? if not ul_in_bn and not pnf_in_power and not anti_fas_ul : {!<tr><td><div class="box" style='background-color:var(--pli)'> </div>!} <span style="color: [+ ul_colour +];">Liberal</span> List: {!</td><td>!} [+ ul_r +]% {!</td><td>!} [+ str_change_ul +]% {!</td><td>!} [+ ul_seating +] {!</td><td>!} [+ ul_seating_disp +]% {!</td></tr>!} ?]
 
 [? if not ul_in_bn and not pnf_in_power and not anti_fas_ul : {!<tr><td>!} -PLI {!</td></tr>!} ?]
 
-[? if bn_formed : {!<tr><td><div class="box" style='background-color:#0047AB'> </div>!} <span style="color: [+ bn_colour +];">National Bloc</span>: {!</td><td>!} [+ bn_r +]% {!</td><td>!} [+ str_change_bn +]% {!</td><td>!} [+ bn_seating +] {!</td><td>!} [+ bn_seating_disp +]% {!</td></tr>!} ?]
+[? if bn_formed : {!<tr><td><div class="box" style='background-color:[+ bn_colour +]'> </div>!} <span style="color: [+ bn_colour +];">National Bloc</span>: {!</td><td>!} [+ bn_r +]% {!</td><td>!} [+ str_change_bn +]% {!</td><td>!} [+ bn_seating +] {!</td><td>!} [+ bn_seating_disp +]% {!</td></tr>!} ?]
 
 [? if ul_in_bn : {!<tr><td>!} -PLI {!</td></tr>!} ?]
 
@@ -923,11 +923,11 @@ go-to: coalition_menu
 
 [? if pnf_in_bn : {!<tr><td>!} -[+ pnf_name +] {!</td></tr>!} ?]
 
-[? if pcs_formed and pnf_r < 5 : {!<tr><td><div class="box" style='background-color:#656573'> </div>!} <span style="color: [+ pcs_colour +];">National-Conservative</span> List: {!</td><td>!} [+ pcs_r_disp +]% {!</td><td>!} [+ str_change_pcs +]% {!</td><td>!} [+ pcs_seating +] {!</td><td>!} [+ pcs_seating_disp +]% {!</td></tr>!} ?]
+[? if pcs_formed and pnf_r < 5 : {!<tr><td><div class="box" style='background-color:var(--pcs)'> </div>!} <span style="color: [+ pcs_colour +];">National-Conservative</span> List: {!</td><td>!} [+ pcs_r_disp +]% {!</td><td>!} [+ str_change_pcs +]% {!</td><td>!} [+ pcs_seating +] {!</td><td>!} [+ pcs_seating_disp +]% {!</td></tr>!} ?]
 
 [? if pcs_formed and pnf_r < 5 : {!<tr><td>!} -PCS {!</td></tr>!} ?]
 
-[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:#000000'> </div>!} [? if not pnf_in_power : <span style="color: [+ pnf_colour +];">Fascist</span> List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
+[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:var(--pnf)'> </div>!} [? if not pnf_in_power : <span style="color: [+ pnf_colour +];">Fascist</span> List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
 
 [? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td>!} -[+ pnf_name +] {!</td></tr>!} ?]
 
@@ -941,7 +941,7 @@ go-to: coalition_menu
 
 [? if pnf_in_power : {!<tr><td>!} -PPI (Def.) {!</td></tr>!} ?]
 
-[? if cc_formed and not pnf_in_power : {!<tr><td><div class="box" style='background-color:#203959'> </div>!} <span style="color: [+ cc_colour +];">Christian-Conservative</span> List: {!</td><td>!} [+ cc_r_disp +]% {!</td><td>!} [+ str_change_cc +]% {!</td><td>!} [+ cc_seating +] {!</td><td>!} [+ cc_seating_disp +]% {!</td></tr>!} ?]
+[? if cc_formed and not pnf_in_power : {!<tr><td><div class="box" style='background-color:var(--cc)'> </div>!} <span style="color: [+ cc_colour +];">Christian-Conservative</span> List: {!</td><td>!} [+ cc_r_disp +]% {!</td><td>!} [+ str_change_cc +]% {!</td><td>!} [+ cc_seating +] {!</td><td>!} [+ cc_seating_disp +]% {!</td></tr>!} ?]
 
 [? if cc_formed and not pnf_in_power : {!<tr><td>!} -CC {!</td></tr>!} ?]
 
