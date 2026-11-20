@@ -749,45 +749,45 @@ th {
 
 /* Styles for parties */
 .seat.psi {
-    fill: #ED2855;
+    fill: var(--psi);
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.psri {
-    fill: #FFC0CB;
+    fill: var(--psri);
 }
 .seat.ldr {
-    fill: #FFD700;
+    fill: var(--ldr);
 }
 .seat.pldi {
-  fill: #FFD700;
+  fill: var(--ldr);
 }
 .seat.ul {
-    fill: #0047AB;
+    fill: var(--pli);
 }
 .seat.pli {
-  fill: #0047AB;
+  fill: var(--pli);
 }
 .seat.ppi {
-    fill: #92dff3;
+    fill: var(--ppi);
 }
 .seat.other {
     fill: #a0a0a0;
 }
 .seat.ds {
-    fill: #1E99C5;
+    fill: var(--ds);
 }
 .seat.pnf {
-    fill: #000000;
+    fill: var(--pnf);
 }
 .seat.pcdi {
-  fill: #C72F35;
+  fill: var(--pcdi);
 }
 .seat.psu {
-  fill: #E35A5A;
+  fill: var(--psu);
 }
 .seat.pri {
-  fill: #3CB371;
+  fill: var(--pri);
 }
 
 .seat.bn {
@@ -795,15 +795,15 @@ th {
 }
 
 .seat.pcs {
-  fill: #656573;
+  fill: var(--pcs);
 }
 
 .seat.cc {
-  fill: #203959;
+  fill: var(--cc);
 }
 
 .seat.pll {
-  fill: #d1c44b;
+  fill: var(--pll);
 }
 
 .seat.vacant {
@@ -813,23 +813,23 @@ th {
 }
 
 .seat.communist {
-  fill: #8B0000;
+  fill: var(--communist);
 }
 
 .seat.maximalist {
-  fill: #DC143C;
+  fill: var(--maximalist);
 }
 
 .seat.labour {
-  fill: #B22222;
+  fill: var(--labor);
 }
 
 .seat.syndicalist {
-  fill: #2F2F2F;
+  fill: var(--syndicalist);
 }
 
 .seat.reformist {
-  fill: #FF6961;
+  fill: var(--reformist);
 }
 
 .seat.si {
@@ -858,14 +858,6 @@ th {
 
 .seat.socpat {
   fill: #CC0000;
-}
-
-.seat.syndicalist {
-  fill: #2F2F2F;
-}
-
-.seat.labour {
-  fill: #F53333;
 }
 
 .seat.turatian {
