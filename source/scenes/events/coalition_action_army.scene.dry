@@ -1,13 +1,15 @@
-title: Military Reshuffle
-subtitle: The Regio Esercito is conducting a sweeping reshuffle.
-view-if: gov_army_timer <= 0 and gov_cooldown_timer <= 0 and year >= 1920 and army_loyalty > 0.71 and king_relation < 5*radicalisation and not national_congress_seen
+title: The [+ prime_minister +] cabinet moves to depoliticize the military!
+subtitle: A sweeping reshuffle!
+view-if: gov_army_timer <= 0 and gov_cooldown_timer <= 0 and year >= 1920 and army_loyalty > 0.71 and king_relation < 5*radicalisation and not national_congress_seen and not prime_minister == Q.pnf_leader
 on-arrival: gov_cooldown_timer = 3; gov_army_timer = 6; army_loyalty -= 0.07
 new-page: true
 tags: event
+ 
+= <span style="color: [+ i_colour +];">[+ king +]</span> depoliticizes the military!
 
-= King [+ king +] reshuffles Regio Esercito leadership
+<img src="img/portraits/VitorioEmanuel.jpg" style="float:left; margin-right:1em; margin-bottom:0.5em; width:220px; object-fit:cover; object-position:top; border:2px solid #000000ff;"> Recently, the  [+ prime_minister +] cabinet has begun moving towards a depoliticizing of the military, under the consent of <span style="color: [+ i_colour +];">[+ king +]</span>,  removing several officers and soldiers from positions where they could influence the tide in our favour, that is, <span style="color: [+ psi_colour +];">**socialism**</span>'s favour. They have been reassigned to different spots or mysteriously dismissed, hurting our influence within the army.
 
-The Minister of War, under suggestion of King [+ king +] has begun a reshuffling of the leadership of the Regio Esercito, which have seen some of the officers and soldiers more sympathetic to our cause removed from power and reassigned to missions in the colonies abroad, harming our influence.
+Even though the [+ prime_minister +] cabinet might have good intentions,  this naturally allows the more <span style="color: [+ pnf_colour +];">reactionary</span> parts of the military to take more space, with Fasci and Arditi sympathizers increasing within the army. 
 
-- @root: There is nothing we can do.
+- @root: What a hard pill to swallow.
 
